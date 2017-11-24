@@ -6,24 +6,24 @@ var server = express();
 server.listen(8080);
 
 // 用户模拟数据
-var users ={
+var users = {
     'blue': "123456",
     'zhangsan': '654321',
     'lisi': '987654'
 }
 
-server.get('/login', function(req, res) {
+server.get('/login', function (req, res) {
     // 获取请求的user和pass
     var user = req.query['user'];
     var pass = req.query['pass'];
 
-    if (users[user] == null ) {
+    if (users[user] == null) {
         // 返回数据
         res.send({
             ok: false,
             msg: '此用户不存在'
         })
-    }else {
+    } else {
         if (users[user] != pass) {
             res.send({
                 ok: false,
@@ -31,7 +31,7 @@ server.get('/login', function(req, res) {
             })
         } else {
             res.send({
-                ok:true,
+                ok: true,
                 msg: '成功'
             })
         }
