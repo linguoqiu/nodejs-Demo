@@ -17,3 +17,10 @@ nodejs的一些学习用的demo
 使用 express\express-static\cooike-parser\cookie-session 学习express如何操作cookie和session
 
 npm install express express-static cooike-parser cookie-session
+
+
+## node4-express-upload-file
+
+使用 express\express-static\cooike-parser\cookie-session\body-parser\multer 学习express如何操作上传文件
+
+npm install express express-static cooike-parser cookie-session
